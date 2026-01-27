@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sportsImageDetail"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/titleDetail"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/title_placeholder"
+        android:layout_alignBottom="@id/sportsImageDetail"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <TextView
+        android:id="@+id/newsTitleDetail"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/news_placeholder"
+        android:layout_below="@id/sportsImageDetail"
+        android:textColor="?android:textColorSecondary"/>
+
+    <TextView
+        android:id="@+id/subTitleDetail"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet ipsum massa, ac varius neque consectetur non. Integer quis justo velit. Proin ultrices, nulla in molestie cursus, justo lectus euismod dui, sed congue sem justo non nibh. Phasellus ullamcorper neque quis posuere imperdiet. Nunc at dictum arcu, at aliquam nunc. Nulla convallis sagittis leo, vitae iaculis justo cursus non. Aenean finibus, dui in tincidunt efficitur, odio ante accumsan sem, a dapibus lorem nibh nec nibh. Morbi tincidunt pellentesque euismod. Vestibulum blandit dolor nec urna porttitor ornare. Morbi sit amet mattis dolor, at auctor purus. Nunc faucibus feugiat libero, vitae consequat odio tempus sed. Quisque at sodales libero. Nunc pellentesque sapien lacus, at aliquet ante sagittis a."
+        android:layout_below="@id/newsTitleDetail"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
